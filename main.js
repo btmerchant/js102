@@ -1,3 +1,14 @@
+$("document").ready(function() {
+  $(document).on("click", "#button", function() {
+      console.log("Got a Button Click");
+
+  });
+
+
+
+
+
+});
 
 var exampleArray1 = ["red", "green", "purple", "amber"];
 var exampleArray2 = [7, 34, 9, 1, 3, 29, ];
@@ -13,6 +24,7 @@ function sortArray1(sourceArray) {
     console.log("Work array= ", work);
     work = work.sort(work);
     console.log("Processed array 1 = ", work);
+    console.log("");
     return work;
 }
 
@@ -27,6 +39,7 @@ function sortArray2(sourceArray) {
           console.log("        Removing Work Array Element #", i);
         }
     }
+    console.log("");
       return work;
 }
 
